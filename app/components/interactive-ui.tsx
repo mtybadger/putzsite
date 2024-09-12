@@ -1,9 +1,9 @@
 'use client'
 
 import React, { useRef, useState, useEffect } from 'react'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { Canvas, useFrame } from '@react-three/fiber'
 import { Text, PerspectiveCamera } from '@react-three/drei'
-import { Vector3, MathUtils, TorusGeometry, MeshBasicMaterial, Mesh, Group } from 'three'
+import { MathUtils, Mesh, Group } from 'three'
 
 interface MousePosition {
   x: number;
@@ -12,7 +12,6 @@ interface MousePosition {
 
 const CentralLogo: React.FC<{ mousePosition: MousePosition }> = ({ mousePosition }) => {
   const ref = useRef<Mesh>(null)
-  const { size } = useThree()
 
   useFrame(() => {
     if (ref.current) {
@@ -74,7 +73,7 @@ const TextOnTorus: React.FC<{ text: string }> = ({ text }) => {
   const chars = text.split('')
   const [offset, setOffset] = useState(0)
 
-  useFrame((state) => {
+  useFrame(() => {
     setOffset((prev) => (prev + 0.001) % 1)
   })
 
