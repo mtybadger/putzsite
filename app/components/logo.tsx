@@ -2,11 +2,21 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const Logo: React.FC = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/about');
+  };
+
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-10">
-      <div className="logo-container transition-transform duration-300 ease-in-out hover:scale-110">
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+      <div 
+        className="logo-container transition-transform duration-300 ease-in-out hover:scale-110 cursor-pointer"
+        onClick={handleClick}
+      >
         <div className="animate-gentle-movement">
           <Image
             src="logo.svg"
