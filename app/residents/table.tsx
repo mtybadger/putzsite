@@ -7,7 +7,7 @@ export default function ResidentsTable() {
   // - middle column letters (vertical)
   // - right side rooms (top to bottom)
   //
-  // Non-resident rooms have a type: &apos;nonresident&apos;, resident rooms have a name.
+  // Non-resident rooms have a type: 'nonresident', resident rooms have a name.
   // We will create arrays of rows; each row has { left, mid, right } entries.
 
   interface Room {
@@ -18,7 +18,7 @@ export default function ResidentsTable() {
   }
   
   const housemastersSuite = {
-    left: { label: "Housemasters&apos; Suite", type: "nonresident", span: true } as Room
+    left: { label: "Housemasters' Suite", type: "nonresident", span: true } as Room
   };
 
   // Munroe block
@@ -26,19 +26,19 @@ export default function ResidentsTable() {
 
   const munroeLeft = [
     { label: "Stairs", type: "nonresident", height: "h-12" },
-    { label: "M204 (A)\nBrios Olivares (&apos;26)", type: "resident", height: "h-16" },
-    { label: "M203 (B)\nLai Wa Chu (&apos;24)", type: "resident", height: "h-16" },
-    { label: "M202 (B)\nSonny Wu (&apos;25)", type: "resident", height: "h-16" },
-    { label: "M201 (B)\nAidan Vaughan (&apos;25)", type: "resident", height: "h-16" },
+    { label: "M204 (A)\nBrios Olivares ('26)", type: "resident", height: "h-16" },
+    { label: "M203 (B)\nLai Wa Chu ('24)", type: "resident", height: "h-16" },
+    { label: "M202 (B)\nSonny Wu ('25)", type: "resident", height: "h-16" },
+    { label: "M201 (B)\nAidan Vaughan ('25)", type: "resident", height: "h-16" },
     { label: "Bathroom", type: "nonresident", height: "h-32" },
   ] as Room[];
 
   const munroeRight = [
     { label: "t", type: "nonresident", height: "h-28" },
     { label: "M210 (GRT)\nPeter Sharpe (G)", type: "resident", height: "h-36" },
-    { label: "M211 (B)\nAndrea Molina (&apos;25)", type: "resident", height: "h-16" },
-    { label: "M212 (C)\nSebastian Garcia (&apos;24)", type: "resident", height: "h-16" },
-    { label: "M213 (B)\nNick Hougardy (&apos;23)", type: "resident", height: "h-16" }
+    { label: "M211 (B)\nAndrea Molina ('25)", type: "resident", height: "h-16" },
+    { label: "M212 (C)\nSebastian Garcia ('24)", type: "resident", height: "h-16" },
+    { label: "M213 (B)\nNick Hougardy ('23)", type: "resident", height: "h-16" }
   ] as Room[];
 
   // Hayden block
@@ -46,25 +46,25 @@ export default function ResidentsTable() {
 
   const haydenLeft = [
     { label: "Basha Lounge", type: "nonresident", height: "h-16" },
-    { label: "H204 (A)\nRachel Liu (&apos;23)", type: "resident", height: "h-16" },
+    { label: "H204 (A)\nRachel Liu ('23)", type: "resident", height: "h-16" },
     { label: "Stairs", type: "nonresident", height: "h-16" },
-    { label: "H203 (A)\nRiya Gupta (&apos;26)", type: "resident", height: "h-16" },
+    { label: "H203 (A)\nRiya Gupta ('26)", type: "resident", height: "h-16" },
     { label: "Bathroom", type: "nonresident", height: "h-32" },
-    { label: "H202 (C)\nYeabsira Hawaz (&apos;26)", type: "resident", height: "h-16" },
-    { label: "H201 (A)\nWill Hathaway (&apos;26)", type: "resident", height: "h-16" },
-    { label: "H200 (A)\nMatthew De Jesus (&apos;25)", type: "resident", height: "h-16" }
+    { label: "H202 (C)\nYeabsira Hawaz ('26)", type: "resident", height: "h-16" },
+    { label: "H201 (A)\nWill Hathaway ('26)", type: "resident", height: "h-16" },
+    { label: "H200 (A)\nMatthew De Jesus ('25)", type: "resident", height: "h-16" }
   ] as Room[];
 
   const haydenRight = [
-    { label: "H206 (A)\nCeleste Meza (&apos;25)", type: "resident", height: "h-16" },
-    { label: "H207 (A)\nErin Zhang (&apos;25)", type: "resident", height: "h-16" },
-    { label: "H208 (A)\nRachel Dzwonkowski (&apos;26)", type: "resident", height: "h-16" },
-    { label: "H209\nJoseph Ntaimo (&apos;23)", type: "resident", height: "h-16" },
-    { label: "H210 (C)\nHarshal Chamdal (&apos;23)", type: "resident", height: "h-16" },
-    { label: "H211 (C)\nHien Le (&apos;23)", type: "resident", height: "h-16" },
-    { label: "H212 (A)\nHannah Kim (&apos;23)", type: "resident", height: "h-16" },
-    { label: "H213 (A)\nLeo Martinez-Silva (&apos;23)", type: "resident", height: "h-16" },
-    { label: "H214 (A)\nJordan Parker-Ashe (&apos;24)", type: "resident", height: "h-16" }
+    { label: "H206 (A)\nCeleste Meza ('25)", type: "resident", height: "h-16" },
+    { label: "H207 (A)\nErin Zhang ('25)", type: "resident", height: "h-16" },
+    { label: "H208 (A)\nRachel Dzwonkowski ('26)", type: "resident", height: "h-16" },
+    { label: "H209\nJoseph Ntaimo ('23)", type: "resident", height: "h-16" },
+    { label: "H210 (C)\nHarshal Chamdal ('23)", type: "resident", height: "h-16" },
+    { label: "H211 (C)\nHien Le ('23)", type: "resident", height: "h-16" },
+    { label: "H212 (A)\nHannah Kim ('23)", type: "resident", height: "h-16" },
+    { label: "H213 (A)\nLeo Martinez-Silva ('23)", type: "resident", height: "h-16" },
+    { label: "H214 (A)\nJordan Parker-Ashe ('24)", type: "resident", height: "h-16" }
   ] as Room[];
 
   // Wood block
@@ -73,23 +73,23 @@ export default function ResidentsTable() {
   const woodLeft = [
     { label: "Wood Lounge", type: "nonresident", height: "h-16" },
     { label: "Kitchen", type: "nonresident", height: "h-36" },
-    { label: "W203 (B)\nLuc Paoli (&apos;not a real MIT student&apos;)", type: "resident", height: "h-16" },
+    { label: "W203 (B)\nLuc Paoli ('not a real MIT student')", type: "resident", height: "h-16" },
     { label: "Bathroom", type: "nonresident", height: "h-32" },
     { label: "Stairs", type: "nonresident", height: "h-16" },
-    { label: "W202 (C)\nYeabsira Moges (&apos;25)", type: "resident", height: "h-16" },
-    { label: "W201 (B)\nLili Sun (&apos;24)", type: "resident", height: "h-16" }
+    { label: "W202 (C)\nYeabsira Moges ('25)", type: "resident", height: "h-16" },
+    { label: "W201 (B)\nLili Sun ('24)", type: "resident", height: "h-16" }
   ] as Room[];
 
   const woodRight = [
     { label: "Wood Lounge", type: "nonresident", height: "h-16" },
-    { label: "W208 (B)\nClaudia Miklavcic (&apos;26)", type: "resident", height: "h-16" },
-    { label: "W209 (B)\nRulan Gu (&apos;25)", type: "resident", height: "h-16" },
-    { label: "W210 (B)\nJonhenry Poss (&apos;23)", type: "resident", height: "h-16" },
-    { label: "W211 (B)\nLuis Modes (&apos;26)", type: "resident", height: "h-16" },
-    { label: "W212 (C)\nMiguel Chacon (&apos;25)", type: "resident", height: "h-16" },
-    { label: "W213 (A)\nShafick Kayemba (&apos;26)", type: "resident", height: "h-16" },
-    { label: "W214 (C)\nSpruce Campbell (&apos;26)", type: "resident", height: "h-16" },
-    { label: "W215 (B)\nGhassan Aljawi (&apos;24)", type: "resident", height: "h-16" }
+    { label: "W208 (B)\nClaudia Miklavcic ('26)", type: "resident", height: "h-16" },
+    { label: "W209 (B)\nRulan Gu ('25)", type: "resident", height: "h-16" },
+    { label: "W210 (B)\nJonhenry Poss ('23)", type: "resident", height: "h-16" },
+    { label: "W211 (B)\nLuis Modes ('26)", type: "resident", height: "h-16" },
+    { label: "W212 (C)\nMiguel Chacon ('25)", type: "resident", height: "h-16" },
+    { label: "W213 (A)\nShafick Kayemba ('26)", type: "resident", height: "h-16" },
+    { label: "W214 (C)\nSpruce Campbell ('26)", type: "resident", height: "h-16" },
+    { label: "W215 (B)\nGhassan Aljawi ('24)", type: "resident", height: "h-16" }
   ] as Room[];
 
   // Helper to render a cell
@@ -107,7 +107,7 @@ export default function ResidentsTable() {
   };
 
   // Helper to render vertical name column
-  // We&apos;ll just stack letters in individual rows.
+  // We'll just stack letters in individual rows.
   const renderNameColumn = (letters: string[]) => {
     return (
       <div className="flex flex-col items-center justify-center">
